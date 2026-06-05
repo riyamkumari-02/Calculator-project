@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Responsive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <header>
+            <h1>Visual Portfolio</h1>
+            <p>Explore the beauty of nature, speed, and architecture</p>
+        </header>
+
+        <div class="filter-buttons">
+            <button class="btn active" data-filter="all">All Collection</button>
+            <button class="btn" data-filter="nature">Nature</button>
+            <button class="btn" data-filter="cars">Supercars</button>
+            <button class="btn" data-filter="cities">Urban Cities</button>
+        </div>
+
+        <div class="gallery-grid">
+            
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/10/800/600" alt="Serene Forest">
+                <div class="overlay">
+                    <h3>Serene Forest</h3>
+                    <span>Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/28/800/600" alt="Deep Woods">
+                <div class="overlay">
+                    <h3>Deep Woods</h3>
+                    <span>Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/16/800/600" alt="Mountain Pathway">
+                <div class="overlay">
+                    <h3>Mountain Pathway</h3>
+                    <span>Nature</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/29/800/600" alt="Mystic Mountains">
+                <div class="overlay">
+                    <h3>Mystic Mountains</h3>
+                    <span>Nature</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="cars">
+                <img src="https://picsum.photos/id/111/800/600" alt="Vintage Speed">
+                <div class="overlay">
+                    <h3>Vintage Speed</h3>
+                    <span>Cars</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cars">
+                <img src="https://picsum.photos/id/133/800/600" alt="Modern Concept">
+                <div class="overlay">
+                    <h3>Modern Concept</h3>
+                    <span>Cars</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cars">
+                <img src="https://picsum.photos/id/183/800/600" alt="Classic Cruiser">
+                <div class="overlay">
+                    <h3>Classic Cruiser</h3>
+                    <span>Cars</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cars">
+                <img src="https://picsum.photos/id/54/800/600" alt="Desert Rider">
+                <div class="overlay">
+                    <h3>Desert Rider</h3>
+                    <span>Cars</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="cities">
+                <img src="https://picsum.photos/id/103/800/600" alt="City Skyline">
+                <div class="overlay">
+                    <h3>City Skyline</h3>
+                    <span>Cities</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cities">
+                <img src="https://picsum.photos/id/122/800/600" alt="Neon Streets">
+                <div class="overlay">
+                    <h3>Neon Streets</h3>
+                    <span>Cities</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cities">
+                <img src="https://picsum.photos/id/43/800/600" alt="Skyscrapers">
+                <div class="overlay">
+                    <h3>Skyscrapers</h3>
+                    <span>Cities</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="cities">
+                <img src="https://picsum.photos/id/46/800/600" alt="Urban Architecture">
+                <div class="overlay">
+                    <h3>Urban Architecture</h3>
+                    <span>Cities</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn" aria-label="Previous image">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption"></div>
+        </div>
+        <button class="nav-btn next-btn" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
